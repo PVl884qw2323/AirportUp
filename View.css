@@ -1,0 +1,10 @@
+body
+{
+	text-align: center; /*расположение текста по центру*/
+	background-color: black;
+	margin-top: 40px;/*отступ от верхнего края родительского элемента*/
+}
+a
+{
+	text-decoration: none;/*отключение подчёркивания ссылок*/
+}
