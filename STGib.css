@@ -1,0 +1,288 @@
+.BackgroundIMG
+{
+	background-image: url('img/fon.jpg');
+	background-repeat: no-repeat; /* Не повторяющийся фон */
+	background-size: 100%;
+	
+}
+.ButtonStyle
+{
+	background-color: rgba(200,120, 100, 0.4);
+	border-color: #003059;
+	margin: 10px;
+	padding: 5px;
+	border-style: inset;
+	border-width: 6px;
+}
+.FloatLeft
+{
+	float: left;
+}
+.IMGLeft
+{
+	margin: 12px;
+	border-style: groove;
+	border-color: #004191;
+	float: left;
+}
+.IMGRight
+{
+	margin: 12px;
+	border-style: groove;
+	border-color: #004191;
+	float: right;
+}
+#once
+{
+	border-top-left-radius: 300px 40px;
+	border-bottom-right-radius: 300px 40px;
+	background-color: #0089AB;
+	line-height: 25px;
+}
+hr
+{
+	border-style: groove;
+	border-color: rgba(83, 136, 229, 0.85);
+	background-color: #1a00bf; /* Цвет линии */
+	height: 4px; /* Толщина линии */
+}
+/*Стиль таблицы*/
+table
+{
+	border-style: ridge;
+	border-color: #007E9E;
+	margin: 30px;
+}
+/*Стиль заголовка*/
+th
+{
+	border-width: 2px;
+	border-style: solid;
+	border-color: #007E9E;
+	background: #BCEBDD;
+}
+/*Стиль ячеек*/
+td
+{
+	border-width: 2px;
+	border-style: solid;
+	border-color: #007E9E;
+	background-color: #C4F5F1;
+}
+/*Стиль элемента списка*/
+.Sty
+{	
+	padding: 10px;
+	background-color: rgba(186, 163, 141, 0.7);
+	border-style: double;
+	border-color: black;
+}
+h2
+{
+	color: rgb(1.96078%, 18.03922%, 20%);
+}
+/*Стили блоков по их вложенности*/
+.BackGr
+{
+	top: 0;
+	left: 0;
+	z-index:0;
+	width:100%;
+	height:100%;
+	position: fixed;
+	background-image: url('img/bgi.jpg');
+	background-size: cover;	/*размер фона*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.Absol
+{
+	width:100%;
+	font-size: 25px;
+	font-family: "Times New Roman";
+	/*Позиции границ относительно окна браузера*/
+	top:0;
+	left:0;
+	position: absolute;
+}
+.DivMain
+{
+	top:0;
+	left:0;
+	max-width: 2100px;
+	/*Центрирование. 
+	Правило работает, если установлено относительное позиционирование 
+	и ширина блочного элемента*/
+	margin: auto;	
+	position: relative; 	/*Позиционирование относительно исходного места*/
+}
+.DivR
+{
+	z-index: 6;
+	left: 960px;
+	top: 540px;
+	position: absolute;
+}
+.DivStyleHeader
+{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 286px;
+	background: linear-gradient(to bottom, black 220px, #2F2F2F 10px);
+}
+.DivHeadIMG
+{
+	top:0;
+	position: relative;
+	z-index: 4;
+	max-width: 1400px;
+	min-width: 1120px;
+	height: 286px;
+	margin-left: 286px;	
+	margin-right: 286px;
+	background-image: url('img/airt.jpg');
+	background-size: auto 220px;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.DivStyleMiddle
+{
+	z-index: 0;/*Задний план*/
+	background-color: rgba(186,141, 100, 0.5);
+	border-style: groove;	/*стиль границ*/
+	border-width: 3px;
+	border-color: black; /*цвет границ*/
+	right: 286px;
+	left: 286px;
+	max-width: 1400px;
+	min-width: 1120px;
+	position: absolute;
+	top: 286px;
+}
+.DivB
+{
+	z-index: 2;
+	right:	7px;
+	position: absolute;
+	top: 270pxpx;
+}
+.clock
+{
+	z-index: 6;
+	position:absolute;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	width: 250px;
+	top: 20px;
+}
+.ButtonPanel
+{
+	z-index:5;
+	position:absolute;
+	padding:5px;
+	top:220px;
+	height: 50px;
+	right: 286px;
+	left: 286px;
+	max-width:1390px;
+	min-width:1110px;
+	border: solid;
+	border-width:3px;
+	border-color: rgb(45, 33, 14); /*цвет границ*/
+	background-color: rgb(86, 74, 55);
+	
+}
+.Search
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height:40px;
+	font-size:25px;
+	color: rgb(228, 216, 197);
+	background-color: rgba(186, 163, 141, 0.4);
+	border-color: rgb(45, 33, 14);
+}
+/*Цвета замещающих текстов для разных браузеров*/
+
+.output
+{
+	position:relative;
+	height: 20px;
+	width: 110px;
+	left: 30px;
+	font-size: 15px;
+	color: white;
+	background-color: rgba(153,102, 102, 0.9);
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+#updown
+{
+	z-index: 4;
+	position: fixed;
+	width:7%;
+	height:14%;
+	top: 80%;
+	right: 2%;
+	cursor: pointer;
+	background: no-repeat;
+	background-size: contain;
+}
+#updown.up
+{
+	background-image: url('img/Arrow-Up.gif');
+	background-repeat: no-repeat;
+	width: 7%;
+	height: 14%;
+}
+#updown.down
+{
+	background-image: url('img/Arrow-Down.gif');
+	background-repeat: no-repeat;
+	width: 7%;
+	height: 14%;
+}
+
+.DivStyleLeft a:hover
+{
+	background-position: 0 -30px;
+}
+.DivStyleLeft a:active
+{
+	margin-left: 1px;
+}
+
+/* Дополнительные стили для ссылок, которые показываются на кнопках*/
+.DivStyleLeft a
+{
+	color: rgb(228, 216, 197);
+	font-size:25px;
+	/* элементы привязки превращаются в блочные, что обеспечивает вертикальное меню*/
+	display: block;
+	/*Убрать стандартное подчеркивание ссылок*/
+	text-decoration: none;
+	/*Ширина и высота элемента привязки в соответствии с размерами изображения кнопки*/
+	width: 200px;
+	height: 23px;
+	padding-left: 10px;
+	padding-bottom:8px;
+	/* Не повторять изображение*/
+	background-image: url('img/ButtonBackground.png');
+	background-size: 200px 60px; 
+	background-repeat: no-repeat;
+}
+.DivStyleLeft
+{
+	font-family: Helvetica, Arial;
+	background-color: rgba(186, 163, 141, 0.7);
+	border-style: groove;
+	border-color: black;
+	border-width: 3px;
+	position: absolute; /*фиксированное расположение*/
+	width: 280px;
+	top: 286px;
+	left: 0;
+}
