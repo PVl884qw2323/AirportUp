@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Language" content="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="Map.css" type="text/css">
+	
+	<title>
+		Карта аэропорта Шереметьево
+	</title>
+	
+	<script src="MapScripts.js">​
+		var DX = 0;
+		var DY = 0;
+	</script>
+</head>
+
+<body>
+
+	<div class="Map" id= "main">
+		<img src='img/mapa.png' alt="Иллюстрация" width="801" height="601" class="IMG" id="im" usemap="#navigation">
+		<map name="navigation">
+			<area shape="poly" coords="385,415,535,380,540,410,390,450" alt="Аэроэкспресс" title=" ррррр"id="a"> 
+			<area shape="poly" coords="274,468,295,426,332,398,263,400,232,321,240,413,166,443,226,446" alt="Терминал D" id="b">
+			<area shape="poly" coords="300,78,305,100,368,84,368,103,368,116,376,123,397,123,410,110,396,83,377,66,376,54" alt="Терминал B" id="c">
+			<area shape="poly" coords="372,305,380,281,478,256,498,273,490,311,473,315,458,298,418,307,414,329,402,332" alt="Терминал F" id="d">
+			<area shape="poly" coords="563,243,576,292,608,300,612,280,650,273,636,223,606,223,570,223" alt="Терминал Шереметьево-Карго" id="e">
+		</map>
+		
+	    <div class="OutBlock" id="Out">
+		</div>
+		
+		
+		<!--<img src='img/mapa.png' alt="Иллюстрация" class="IMG" id="im">-->
+		<div>
+		</div>
+	</div>
+	<a href="LBpage1Gib.html#Fragment2"><b>Вернуться на предыдущую страницу</b></a>
+	
+<script>
+	var OutObj = document.getElementById("Out");						// Создать объект для вывода координат
+	var MapObj = document.getElementById("main");						// Создать объект, внутри которого определяются координаты мышки
+	//MapObj.addEventListener("mousemove",ShowCoordinates, false);
+	var IMGObj = document.getElementById("im");	
+	
+	
+	document.getElementById("a").addEventListener("mouseover",Namer, false);
+	document.getElementById("b").addEventListener("mouseover",Namer, false);
+	document.getElementById("c").addEventListener("mouseover",Namer, false);
+	document.getElementById("d").addEventListener("mouseover",Namer, false);
+	document.getElementById("e").addEventListener("mouseover",Namer, false);
+	var OutH = 50;
+</script>			
+			
+</body>
+</html>
